@@ -6,9 +6,75 @@
 	</head>
 	<body>
 		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-		    Pesquisar:<input type="text" name="q" placeholder="Digite aqui sua consulta" size="15">
-		    <input type="submit" value="Buscar">
-		    <input type="reset" value="Limpar">
+		    <fieldset>
+		        <legend>Campo de busca</legend>
+		        <label for="searchbox">Pesquisar:</label>
+		        <input type="text" name="q" id="searchbox" placeholder="Digite aqui sua consulta" size="15" list="country" autofocus required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+		        <input type="submit" value="Buscar">
+		        <input type="reset" value="Limpar"><br>
+		        
+		        <label for="senha">Senha:</label>
+		        <input type="password" name"senha" id="senha"><br>
+		        
+		        <datalist id="country">
+		            <option value="Afghanistan"></option>
+		            <option value="Albania"></option>
+		            <option value="Algeria"></option>
+		            <option value="Andorra"></option>
+		            <option value="Angola"></option>
+		        </datalist>
+		    </fieldset>
+		    
+		    <fieldset>
+		        <legend>Radiobox</legend>
+		        Você deseja trabalhar como Webmaster?<br>
+		        <input type="radio" name="opcao" value="sim">Sim<br>
+		        <input type="radio" name="opcao" value="nao">Não<br>
+		        <input type="radio" name="opcao" value="talvez">Talvez<br>
+		        <input type="radio" name="opcao" value="quem_sabe">Quem sabe<br>
+		    </fieldset>
+		    
+		    <fieldset>
+		        <legend>Checkbox</legend>
+		        O que você deseja aprender?<br>
+		        <input type="checkbox" name="curso" value="html">HTML<br>
+		        <input type="checkbox" name="curso" value="css">CSS<br>
+		        <input type="checkbox" name="curso" value="javascript">JavaScript<br>
+		        <input type="checkbox" name="curso" value="php">PHP<br>
+		    </fieldset>
+		    
+	    	<fieldset>
+	    	    <legend>Menu</legend>
+		        <select menu="nomeMenu" size="4" multiple="1">
+		            <optgroup label="Linguagems para Web">
+		                <option value="html">HTML (linguagem de marcação)</option>
+		                <option value="html">CSS (linguagem de estilo)</option>
+		                <option value="html">JavaScript (linguagem de programação)</option>
+		            </optgroup>
+		        </select><br>
+		    </fieldset>
+		    
+		    <fieldset>
+		        <legend>Text Area</legend>
+		        <textarea rows="10" cols="40" maxlength="500"disabled readonly>Zdravstvuite</textarea>
+		    </fieldset>
+		    
+		    <fieldset>
+		        <legend>Area de Teste</legend>
+		        <input type="search" value="Search"><br>
+		        <input type="number" value="7" step="2"><br>
+		        <input type="range" value="100" step="50"><br>
+		        <input type="color"><br>
+		        <input type="tel"><br>
+		        <input type="url"><br>
+		        <input type="email"><br>
+		        <input type="date"><br>
+		        <input type="month"><br>
+		        <input type="week"><br>
+		        <input type="time"><br>
+		        <input type="datetime"><br>
+		        <input type="datetime-local"><br>
+		    </fieldset>
 		</form>
 	</body>
 </html>
