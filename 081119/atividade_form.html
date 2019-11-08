@@ -20,12 +20,10 @@
         <br>
 
         <br>
-        <label for="dia">Dia:</label>
-        <input type="text" id="dia" pattern="^(((0?)[1-9])|([1-2]\d)|((3)[0-1]))$" maxlength="2" size="1" required>
-        <label for="mes">Mês:</label>
-        <input type="text" id="mes" pattern="^(((0)?)[1-9])|((1)[0-2])$" maxlength="2" size="1" required>
-        <label for="ano">Ano:</label>
-        <input type="text" id="ano" pattern="^(\d{4})$" maxlength="4" size="2"required>
+        <label for="nascimento">Nascimento:</label>
+        <input type="text" id="nascimento" pattern="^(((0?)[1-9])|([1-2]\d)|((3)[0-1]))$" maxlength="2" size="1" value="dd" required>
+        <input type="text" pattern="^(((0)?)[1-9])|((1)[0-2])$" maxlength="2" size="1" value="mm" required>
+        <input type="text" pattern="^(\d{4})$" maxlength="4" size="2" value="aaaa" required>
         <br>
 
         <br>
@@ -59,35 +57,34 @@
   			<br>
   			<label for="estado">Estado:</label>
   			<select id="estado">
-  				<optgroup label="Selecione seu Estado">
-  					<option selected disabled hidden>Selecione seu Estado</option>
-  					<option>AC</option>
-  					<option>AL</option>
-  					<option>AP</option>
-  					<option>AM</option>
-  					<option>BA</option>
-  					<option>CE</option>
-  					<option>DF</option>
-  					<option>ES</option>
-  					<option>GO</option>
-  					<option>MA</option>
-  					<option>MT</option>
-  					<option>MS</option>
-  					<option>MG</option>
-  					<option>PA</option>
-  					<option>PB</option>
-  					<option>PR</option>
-  					<option>PE</option>
-  					<option>PI</option>
-  					<option>RJ</option>
-  					<option>RN</option>
-  					<option>RS</option>
-  					<option>RO</option>
-  					<option>RR</option>
-  					<option>SC</option>
-  					<option>SP</option>
-  					<option>SE</option>
-  					<option>TO</option>
+  				<optgroup >
+  					<option>Acre</option>
+  					<option>Alagoas</option>
+  					<option>Amapá</option>
+  					<option>Amazonas</option>
+  					<option>Bahia</option>
+  					<option>Ceará</option>
+  					<option>Distrito Federal</option>
+  					<option>Espírito Santo</option>
+  					<option>Goiás</option>
+  					<option>Maranhão</option>
+  					<option>Mato Grosso</option>
+  					<option>Mato Grosso do Sul</option>
+  					<option>Minas Gerais</option>
+  					<option>Pará</option>
+  					<option>Paraíba</option>
+  					<option>Paraná</option>
+  					<option>Pernambuco</option>
+  					<option>Piauí</option>
+  					<option>Rio de Janeiro</option>
+  					<option>Rio Grande do Norte</option>
+  					<option>Rio Grande do Sul</option>
+  					<option>Rondônia</option>
+  					<option>Roraima</option>
+  					<option>Santa Catarina</option>
+  					<option>São Paulo</option>
+  					<option>Sergipe</option>
+  					<option>Tocantins</option>
   				</optgroup>
   			</select>
   			<br>
@@ -129,7 +126,7 @@
   			<br>
 
   			<br>
-  			<label for="confirmar_senha">Confirme sua senha:</label>
+  			<label for="confirmar_senha">Confirme a senha:</label>
   			<input type="password" id="confirmar_senha" required>
   			<br>
 
