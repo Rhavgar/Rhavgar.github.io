@@ -1,0 +1,17 @@
+body
+{
+  color: gold;
+  background-color: darkmagenta;
+  background-image: url(imageback.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+
+  font: italic bold 30px Literata, sans-serif;
+
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+p:hover {color: blue;}
