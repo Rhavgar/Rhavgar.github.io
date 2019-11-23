@@ -1,0 +1,49 @@
+body
+{
+  background-color: #f7f7f7f7;
+  font-family: sans-serif;
+}
+
+header, footer
+{
+  color: white;
+  background-color: gray;
+}
+
+section
+{
+  margin-left: 200px;
+  border-left: solid medium gray;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+h1, h2, footer
+{
+  margin: 0px;
+  padding: 5px;
+}
+
+nav
+{
+  float:left;
+}
+
+ul.h li
+{
+  display: block;
+}
+
+ul.h a
+{
+  color: black;
+  text-decoration: none;
+  background-color: lightgray;
+  padding: 15px;
+  display: block;
+}
+
+ul a:hover
+{
+  background-image: linear-gradient(lightgray, white, lightgray);
+}
