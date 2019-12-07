@@ -1,0 +1,62 @@
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr 8fr 0.5fr;
+  grid-template-areas: "titulo titulo" "links links" "conteudo coringa" "rodape rodape";
+}
+
+.titulo
+{
+  grid-area: titulo;
+  background-color: red;
+}
+
+.links
+{
+  grid-area: links;
+  background-color: yellow;
+}
+
+ul, li
+{
+  display: inline;
+}
+
+.coringa
+{
+  grid-area: coringa;
+  background-color: blue;
+}
+
+.rodape
+{
+  grid-area: rodape;
+  background-color: darkblue;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2.4fr 0.2fr;
+  grid-template-areas: "c_titulo c_titulo c_titulo" "c_corpo c_corpo c_corpo" "c_rodape c_rodape c_rodape";
+  grid-area: conteudo;
+}
+
+.c_titulo
+{
+  grid-area: c_titulo;
+  background-color: brown;
+}
+
+.c_corpo
+{
+  grid-area: c_corpo;
+  background-color: purple;
+}
+
+.c_rodape
+{
+  grid-area: c_rodape;
+  background-color: darkmagenta;
+}
