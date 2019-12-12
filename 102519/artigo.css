@@ -1,24 +1,36 @@
+body
+{
+  font-family: serif;
+}
+
 .grid-container
 {
   display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
-  grid-template-rows: 1fr 0.5fr 8fr 0.5fr;
+  grid-template-columns: 2.3fr 0.7fr;
+  grid-template-rows: 0.4fr 0.2fr 2.3fr 0.1fr;
   grid-template-areas: "titulo titulo" "links links" "conteudo coringa" "rodape rodape";
 }
 
 .titulo
 {
   grid-area: titulo;
-  background-color: red;
+  background-color: tomato;
+  padding-bottom: 50px;
+}
+
+.titulo h1
+{
+  margin: 0;
 }
 
 .links
 {
   grid-area: links;
   background-color: yellow;
+  display: flex;
 }
 
-ul, li
+.links ul, .links li
 {
   display: inline;
 }
@@ -26,27 +38,29 @@ ul, li
 .coringa
 {
   grid-area: coringa;
-  background-color: blue;
+  background-color: darkblue;
 }
 
 .rodape
 {
   grid-area: rodape;
-  background-color: darkblue;
+  background-color: darkcyan;
 }
 
 .conteudo {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 2.4fr 0.2fr;
-  grid-template-areas: "c_titulo c_titulo c_titulo" "c_corpo c_corpo c_corpo" "c_rodape c_rodape c_rodape";
+  grid-template-rows: 0.1fr 1.8fr 0.1fr;
+  grid-template-areas: "c_titulo" "c_corpo" "c_rodape";
   grid-area: conteudo;
+  margin: 15px;
+  padding-bottom: 200px;
 }
 
 .c_titulo
 {
   grid-area: c_titulo;
   background-color: brown;
+  margin: 0;
 }
 
 .c_corpo
@@ -58,5 +72,10 @@ ul, li
 .c_rodape
 {
   grid-area: c_rodape;
-  background-color: darkmagenta;
+  background-color: darkslateblue;
+}
+
+.a_titulo, .a_data
+{
+  margin: 0;
 }
