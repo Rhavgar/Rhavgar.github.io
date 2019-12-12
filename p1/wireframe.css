@@ -1,0 +1,228 @@
+body
+{
+  font-family: serif;
+}
+
+.main-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "logo cabeçalho" "navegação conteudo" "rodape rodape";
+}
+
+.logo
+{
+  grid-area: logo;
+  background-color: blue;
+}
+
+.cabeçalho
+{
+  display: grid;
+  grid-area: cabeçalho;
+  background-color: tomato;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "c_links" "c_procura" "c_menu"
+}
+
+.c_links
+{
+  grid-area: c_links;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul.c_links li
+{
+  display: inline-grid;
+}
+
+b.A
+{
+  background-color: black;
+  color: white;
+  padding: 1px;
+}
+
+.c_procura
+{
+  grid-area: c_procura;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.c_menu
+{
+  grid-area: c_menu;
+  display: flex;
+  justify-content: end;
+}
+
+ul.c_menu li
+{
+  display: inline-grid;
+	border-style: groove;
+  width: 150px;
+  height: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.c_menu a
+{
+    text-decoration: none;
+}
+
+.navegação
+{
+  display: grid;
+  grid-area: navegação;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "menu" "popular"
+}
+
+.menu
+{
+  grid-area: menu;
+  background-color: lightgrey;
+}
+
+ul.menu li
+{
+  display: grid;
+	border-style: groove;
+  width: 150px;
+  height: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.menu a
+{
+  text-decoration: none;
+}
+
+.popular
+{
+  grid-area: popular;
+  background-color: cyan;
+}
+
+ul.pop_box
+{
+  border: 1px solid;
+}
+
+ul.pop_box li
+{
+  list-style-type: none;
+  position: relative;
+  padding-left: 5px;
+}
+
+ul.pop_box li:before {
+  content: "\25BA \0020";
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+.conteudo
+{
+  display: grid;
+  grid-area: conteudo;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "artigo coringa"
+}
+
+.artigo
+{
+  display: grid;
+  grid-area: artigo;
+  background-color: grey;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: "novo" "stick" "calendario";
+}
+
+.novo
+{
+  grid-area: novo;
+  display: grid;
+  background-color: darkgreen;
+  grid-template-columns: 0.7fr 2fr 0.3fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: "n_titulo n_titulo n_scroll" "n_fig n_artigo n_scroll" "n_r_data n_rodape n_scroll";
+}
+
+.n_titulo
+{
+  grid-area: n_titulo;
+}
+
+.n_scroll
+{
+  grid-area: n_scroll;
+}
+
+.n_fig
+{
+  grid-area: n_fig;
+}
+
+.n_artigo
+{
+  display: grid;
+  grid-area: n_artigo;
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-areas: "n_a_titulo" "n_a_data" "n_a_conteudo";
+}
+
+.n_a_titulo
+{
+  grid-area: n_a_titulo;
+}
+
+.n_a_data
+{
+  grid-area: n_a_data;
+}
+
+.n_a_conteudo
+{
+  grid-area: n_titulo;
+}
+
+.n_r_data
+{
+  grid-area: n_r_data;
+}
+
+.n_rodape
+{
+  grid-area: n_rodape;
+}
+.stick
+{
+  grid-area: stick;
+  background-color: blue;
+}
+
+.calendario
+{
+  grid-area: calendario;
+  background-color: brown;
+}
+
+.coringa
+{
+  grid-area: coringa;
+  background-color: darkgrey;
+}
+
+.rodape
+{
+  grid-area: rodape;
+  background-color: purple;
+}
