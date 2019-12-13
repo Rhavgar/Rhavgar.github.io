@@ -4,6 +4,7 @@ body
   color: white;
   margin: 0px 20px 0px 0px;
   background-color: rgb(21, 32, 43);
+  font-size: 13px;
 }
 
 a
@@ -151,7 +152,7 @@ ul.menu a
 ul.pop_box
 {
   border: 1px solid;
-  margin: 0;
+  margin: 10px 0px 10px 0px;
 }
 
 ul.pop_box li
@@ -202,7 +203,7 @@ ul.pop_box li:before {
   grid-area: n_titulo;
 }
 
-.n_titulo h1
+.n_titulo h2
 {
   display: grid;
   margin: 0;
@@ -283,7 +284,7 @@ ul.o_data
 {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 10px;
   text-align: right;
 }
 
@@ -301,7 +302,7 @@ ul.o_info
 {
   margin: 0px 50px 0px 10px;
   padding: 0;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 ul.o_info li
@@ -392,7 +393,7 @@ ul.c_a_data
 {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 10px;
   text-align: right;
 }
 
@@ -410,7 +411,7 @@ ul.c_a_info
 {
   margin: 0px 50px 0px 10px;
   padding: 0;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 ul.c_a_info li
