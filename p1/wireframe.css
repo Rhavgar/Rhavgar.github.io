@@ -34,6 +34,7 @@ figure.logo
 {
   display: grid;
   grid-area: cabeçalho;
+  background-color: rgb(56, 68, 77);
   grid-template-rows: 25px 25px 30px;
   grid-template-areas: "c_links" "c_procura" "c_menu"
 }
@@ -144,7 +145,7 @@ ul.menu a
   grid-area: popular;
 }
 
-.popular h2
+h2.popular
 {
   margin: 0;
 }
@@ -182,8 +183,27 @@ ul.pop_box li:before {
 {
   display: grid;
   grid-area: artigo;
-  grid-template-rows: 225px 125px 125px;
-  grid-template-areas: "novo" "stick" "calendario";
+  grid-template-rows: 30px 200px 125px 125px;
+  grid-template-areas: "a_titulo" "novo" "stick" "calendario";
+}
+
+.a_titulo
+{
+  display: grid;
+  grid-area: a_titulo;
+}
+
+h2.a_titulo
+{
+  display: grid;
+  padding-left: 10px;
+}
+
+aside.a_titulo
+{
+  display: grid;
+  margin: 0;
+  text-align: right;
 }
 
 .novo
@@ -194,26 +214,8 @@ ul.pop_box li:before {
   padding: 10px;
   background-color: rgb(56, 68, 77);
   grid-template-columns: 100px 1fr 10px;
-  grid-template-rows: 25px 100px 100px;
-  grid-template-areas: "n_titulo n_titulo n_scroll" "n_fig n_artigo n_scroll" "n_a_outros n_a_outros n_scroll";
-}
-
-.n_titulo
-{
-  grid-area: n_titulo;
-}
-
-.n_titulo h2
-{
-  display: grid;
-  margin: 0;
-}
-
-aside.n_titulo
-{
-  display: grid;
-  margin: 0;
-  text-align: right;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: "n_fig n_artigo n_scroll" "n_a_outros n_a_outros n_scroll";
 }
 
 .n_scroll
@@ -227,11 +229,6 @@ aside.n_titulo
   margin: 0;
 }
 
-.n_fig img
-{
-
-}
-
 .n_artigo
 {
   display: grid;
@@ -242,7 +239,7 @@ aside.n_titulo
   margin-left: 10px;
 }
 
-.n_artigo p
+p.n_artigo
 {
   margin: 0;
 }
@@ -327,7 +324,7 @@ ul.o_info li
   grid-area: s_titulo;
 }
 
-.s_titulo h2
+h2.s_titulo
 {
   display: grid;
   margin: 0;
@@ -361,7 +358,7 @@ ul.o_info li
   grid-area: c_titulo;
 }
 
-.c_titulo h2
+h2.c_titulo
 {
   display: grid;
   margin: 0;
