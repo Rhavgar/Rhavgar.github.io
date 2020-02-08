@@ -5,6 +5,18 @@ class Agenda
       this.contato = [];
     }
     
+    pfvrInfo()
+    {
+      nome = prompt("Informe o Nome!");
+      sobrenome = prompt("Informe o Sobrenome!");
+      nascimento = prompt("Informe o Nascimento!");
+      tipo = prompt("Informe o Tipo do telefone!");
+      ddd = prompt("Informe o DDD!");
+      num = prompt("Informe o Numero!");
+      
+      adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num);
+    }
+    
     adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num)
     {
       this.contato.push(new Contato(new Pessoa(nome, sobrenome, nascimento), new Numero(tipo, ddd, num)));
