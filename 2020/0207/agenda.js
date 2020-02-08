@@ -50,18 +50,18 @@ class Contato
         num = prompt("Numero?");
         cep = prompt("CEP?");
         comp = prompt("Complemento?");
-        adicionarEndereco(tipo, logra, num, cep, comp);
+        this.adicionarEndereco(tipo, logra, num, cep, comp);
       }
       if (n == 3)
       {
         tipo = prompt("Tipo do Email?");
         email = email("Email?);
-        adicionarEmail(tipo, email);
+        this.adicionarEmail(tipo, email);
       }
       else
       {
         alert("Entre com 1 2 ou 3");
-        addInfo();
+        this.addInfo();
       }
     }
     
