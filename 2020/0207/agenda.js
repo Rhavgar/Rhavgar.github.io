@@ -89,3 +89,5 @@ class Email
       this.email = email;
     }
   }
+
+var teste = new Agenda();
