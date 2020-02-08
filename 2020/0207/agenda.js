@@ -33,15 +33,46 @@ class Contato
       this.end = [];
       this.email = [];
     }
-       
+    addInfo()
+    {
+      n = prompt("Adicionar: Numero (1); Endereço(2); Email(3)");
+      if (n == 1)
+      {
+        tipo = prompt("Tipo de telefone?");
+        ddd = prompt("DDD?");
+        num = prompt("Numero?");
+        this.adicionarNumero(tipo, ddd, num);
+      }
+      if (n == 2)
+      {
+        tipo = prompt("Tipo do Endereço?");
+        logra = prompt("Logradouro?");
+        num = prompt("Numero?");
+        cep = prompt("CEP?");
+        comp = prompt("Complemento?");
+        adicionarEndereco(tipo, logra, num, cep, comp);
+      }
+      if (n == 3)
+      {
+        tipo = prompt("Tipo do Email?");
+        email = email("Email?);
+        adicionarEmail(tipo, email);
+      }
+      else
+      {
+        alert("Entre com 1 2 ou 3");
+        addInfo();
+      }
+    }
+    
     adicionarNumero(tipo, ddd, num)
     {
       this.numero.push(new Numero(tipo, ddd, num));
     }
     
-    adicionarEndereco(tipo, log, num, cep, comp)
+    adicionarEndereco(tipo, logra, num, cep, comp)
     {
-      this.end.push(new Endereco(tipo, log, num, cep, comp));
+      this.end.push(new Endereco(tipo, logra, num, cep, comp));
     }
     
     adicionarEmail(tipo, email)
@@ -72,10 +103,10 @@ class Numero
 
 class Endereco
   {
-    constructor(tipo, log, num, cep, comp)
+    constructor(tipo, logra, num, cep, comp)
     {
       this.tipo = tipo;
-      this.log = log;
+      this.logra = logra;
       this.num = num;
       this.cep = cep;
       this.comp = comp;
