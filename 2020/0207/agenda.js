@@ -7,12 +7,12 @@ class Agenda
     
     pfvrInfo()
     {
-      nome = prompt("Informe o Nome!");
-      sobrenome = prompt("Informe o Sobrenome!");
-      nascimento = prompt("Informe o Nascimento!");
-      tipo = prompt("Informe o Tipo do telefone!");
-      ddd = prompt("Informe o DDD!");
-      num = prompt("Informe o Numero!");
+      var nome = prompt("Informe o Nome!");
+      var sobrenome = prompt("Informe o Sobrenome!");
+      var nascimento = prompt("Informe o Nascimento!");
+      var tipo = prompt("Informe o Tipo do telefone!");
+      var ddd = prompt("Informe o DDD!");
+      var num = prompt("Informe o Numero!");
       
       adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num);
     }
