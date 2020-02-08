@@ -14,7 +14,7 @@ class Agenda
       var ddd = prompt("Informe o DDD!");
       var num = prompt("Informe o Numero!");
       
-      adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num);
+      this.adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num);
     }
     
     adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num)
