@@ -28,7 +28,8 @@ class Contato
     constructor(pessoa, numero)
     {
       this.pessoa = pessoa;
-      this.numero = [].push(numero);
+      this.numero = [];
+      this.numero.push(numero);
       this.end = [];
       this.email = [];
     }
