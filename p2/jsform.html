@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Form</title>
+    <script type="text/javascript" src="jsform.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome">
+      <br>
+      <br>
+      <label for="tel">Telefone: </label>
+      <input type="tel" id="tel">
+      <br>
+      <br>
+      <label for="dtc">Data de Chegada: </label>
+      <input type="date" id="dtc">
+      <br>
+      <br>
+      <label for="dts">Data de Saida: </label>
+      <input type="date" id="dts">
+      <br>
+      <br>
+      <label for="tquarto">Tipo de Quarto: </label>
+      <select id="tquarto">
+        <option value=139 id="qs">Single (R$ 139,00)</option>
+        <option value=220 id="qd">Double(R$ 220,00)</option>
+        <option value=340 id="qt">Triplo(R$ 340,00)</option>
+      </select>
+      <br>
+      <br>
+      <label for="crianca">Quantas crianças menores que 5 anos? </label>
+      <select id="crianca">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2 id="c2">2</option>
+        <option value=3 id="c3">3</option>
+      </select>
+      <br>
+      <br>
+      <input type="button" id="calc" value="Calcular">
+    </form>
+  </body>
+</html>
